@@ -1,0 +1,58 @@
+version: "3"
+
+
+services:
+      bwapp:
+          image: raesene/bwapp
+          container_name: bwapp
+          ports: 
+              - 8081:8080
+          networks:
+              - new1
+          restart:
+                on-failure
+      dava:
+          image: vulnerables/web-dvwa
+          container_name: dvwa
+          ports:
+              - 8882:80
+          networks: 
+              - new1
+          restart:
+                on-failure
+      mutillidae:
+          image: szsecurity/mutillidae
+          container_name: mutillide
+          ports:
+              - 8083:80
+          networks:
+              - new1
+          restart:
+               on-failure
+      webgoat1:
+          image: webgoat/webgoat-7.1
+          container_name: webgoat7
+          ports:
+              - 8084:8080
+          networks:
+                - new1
+          restart:
+                on-failure
+      juiceshop:
+          image: bkimminich/juice-shop  
+          container_name: juiceshop  
+          ports:
+              - 8085:3000
+          networks:
+                - new1
+          restart:
+                on-failure
+
+
+
+
+
+networks:
+        new1:
+          driver: bridge
+      
