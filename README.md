@@ -1,6 +1,7 @@
-# MY-personal-CTF-LAB(inside Docker)
+#   IIEC_Docker_Project MY-personal-CTF-LAB(inside Docker)
+   #### Under IIEC-RISE 1.0 Campaign I learnt about Docker under the guidance of Vimal Daga Sir
 
-### Vulnerable web application list
+## Vulnerable web application list
 1. juice-shop    
 2. bwapp 
 3. webgoat-7.0
@@ -13,9 +14,8 @@
  
  
  ##### Docker  installation 
-                       sudo apt-get install docker-engine -y
-                       
-                       sudo yum install docker-engine -y
+~~~ sudo apt-get install docker-engine -y
+~~~ sudo yum install docker-engine -y
    ##### Start Docker
                       systemctl start Docker
    ##### Stop Docker
